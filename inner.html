@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8" />
     <title>Моноподы для селфи</title>
   </head>
   <body>
     <header>
-      <a href="index.html">DEVICE</a>
+      <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
 
       <form>
+        <img src="img/search.svg" width="16" height="16" alt="search">
         <input type="search" placeholder="поиск по сайту" />
       </form>
 
       <nav>
         <ul>
-          <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><a href=""><img src="img/user.svg" width="13" height="14" alt="user">Войти</a></li>
+          <li><a href=""><img src="img/compare.svg" width="14" height="14" alt="compare">Сравнить</a></li>
+          <li><a href=""><img src="img/cart.svg" width="14" height="14" alt="cart">Корзина</a></li>
           <li>
-            Каталог товаров
+            Каталог товаров<img src="img/plus.svg" width="22" height="22" alt="plus">
             <ul>
               <li><a href="">Виртуальная реальность</a></li>
               <li><a href="">Моноподы для селфи</a></li>
@@ -60,35 +62,56 @@
 
     <section>
       <h2>Цвет</h2>
-      <input type="checkbox" /> Черный <br />
-      <input type="checkbox" /> Белый <br />
-      <input type="checkbox" /> Синий <br />
-      <input type="checkbox" /> Красный <br />
-      <input type="checkbox" /> Розовый <br />
-      <h3>Blurtooth</h3>
-      <input name="Bluetooth" type="radio" value="est" /> Есть <br />
-      <input name="Bluetooth" type="radio" value="net" /> Нет <br />
-
+      <label class ="check option">
+        <input class="check__input" type="checkbox" /> 
+        <span class="check__box"></span>
+        Черный
+      </label>
+      <label class="check option">
+        <input class="check__input" type="checkbox" />
+        <span class="check__box"></span>
+        Белый 
+      </label>
+      <label class="check option">
+        <input class="check__input" type="checkbox" /> 
+        <span class="check__box"></span>
+        Синий
+      </label>
+      <label class="check option">
+        <input class="check__input" type="checkbox"/> 
+        <span class="check__box"></span>
+        Красный
+      </label>
+      <label class="check option">
+        <input class="check__input" type="checkbox"/> 
+        <span class="check__box"></span>
+        Розовый
+      </label>
+        
+      <h3>Bluetooth</h3>
+      <input class="radio__input" name="Bluetooth" type="radio"/> Есть 
+      <input class="radio__input" name="Bluetooth" type="radio"/> Нет 
+      
       <button>Показать</button>
     </section>
 
     <article>
-      <a href="palka500.html"><img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка"/>
+      <a href="palka500.html"><img src="img/item-11.jpg" alt="Любительская селфи-палка">
         <h2>Любительская селфи-палка 500р</h2>
       </a>
     </article>
     <article>
-      <a href="palka500.html"><img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка"/>
+      <a href="palka500.html"><img src="img/item-21.jpg" alt="Профессиональная селфи-палка">
         <h2>Профессиональная селфи-палка 1500р</h2>
       </a>
     </article>
     <article>
-      <a href="palka500.html"><img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка"/>
+      <a href="palka500.html"><img src="img/item-31.jpg" alt="Непотопляемая селфи-палка">
         <h2>Непотопляемая селфи-палка 2500р</h2>
       </a>
     </article>
     <article>
-      <a href="palka500.html"><img src="https://via.placeholder.com/150x100" alt="Селфи-палка <q>Следуй за мной</q>"/>
+      <a href="palka500.html"><img src="img/item-41.jpg" alt="Селфи-палка <q>Следуй за мной</q>">
         <h2>"Селфи-палка <q>Следуй за мной</q> 4900р</h2>
       </a>
     </article>
@@ -100,14 +123,14 @@
     <a href="">Вперед</a>
 
     <footer>
-      <img src="https://via.placeholder.com/150x100" alt="DEVICE" />
+      <img src="img/logo-yellow.svg" alt="DEVICE" />
       <address>г. Москва, ул. Строителей, 15</address>
       <a href="tel:74954959595">7(495)495-95-95</a>
 
       <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li><a href=""><img src="img/icon_user-yellow.svg" width="13" height="14" alt="user">Войти</a></li>
+        <li><a href=""><img src="img/icon_chart-yellow.svg" width="14" height="14" alt="compare">Сравнить</a></li>
+        <li><a href=""><img src="img/icon_cart-yellow.svg" width="14" height="14" alt="cart">Корзина</a></li>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -115,9 +138,10 @@
 
       <section>
         <h2>социальные сети</h2>
-        <a href="http://www.instagram.com/">instagram</a>
-        <a href="http://www.facebook.com/">facebook</a>
-        <a href="http://www.twitter.com/">twitter</a>
+        <a href="http://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a>
+        <a href="http://www.facebook.com/"><img src="img/fb.svg" alt="fb"></a>
+        <a href="http://www.twitter.com/"><img src="img/twitter.svg" alt="twittwer"></a>
+        <a href="http://htmlacademy.ru/"><img src="img/logo-html.svg" alt="htmlacademy"></a>
       </section>
     </footer>
   </body>
