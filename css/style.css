@@ -1,17 +1,17 @@
-/* Option*/
-.option {
+/* Option + dot*/
+option {
   display: block;
   margin-bottom: 10px;
 }
-/* Check */
-.check {
+/* Check + dot*/
+check {
   padding-left: 24px;
 }
-.check input {
+check input {
   position: absolute;
   -webkit-appearance: none;
 }
-.check__box {
+check__box {
   margin-left: -25px;
   position: absolute;
   width: 24px;
@@ -19,21 +19,21 @@
   background-image: url(../img/checkbox-off.svg);
 }
 /* Checked */
-.check__input:checked + .check__box {
+check__input:checked + .check__box {
   background-image: url(../img/checkbox-on.svg);
 }
 
-/* Radio */
-.radio__input {
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-.radio__label {
-  margin-left: -25px;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/radio-off.svg);
 
+
+/* Hide */
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0 ;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
 }
