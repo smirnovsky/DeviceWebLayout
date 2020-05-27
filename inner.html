@@ -10,7 +10,6 @@
       <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
 
       <form>
-        <img src="img/search.svg" width="16" height="16" alt="search">
         <input type="search" placeholder="поиск по сайту" />
       </form>
 
@@ -60,40 +59,43 @@
       </div>
     </section>
 
-    <section>
-      <h2>Цвет</h2>
-      <label class ="check option">
-        <input class="check__input" type="checkbox" /> 
-        <span class="check__box"></span>
-        Черный
-      </label>
-      <label class="check option">
-        <input class="check__input" type="checkbox" />
-        <span class="check__box"></span>
-        Белый 
-      </label>
-      <label class="check option">
-        <input class="check__input" type="checkbox" /> 
-        <span class="check__box"></span>
-        Синий
-      </label>
-      <label class="check option">
-        <input class="check__input" type="checkbox"/> 
-        <span class="check__box"></span>
-        Красный
-      </label>
-      <label class="check option">
-        <input class="check__input" type="checkbox"/> 
-        <span class="check__box"></span>
-        Розовый
-      </label>
+    <fieldset>
+      <form action="https://echo.htmlacademy.ru/">
+        <h2>Цвет</h2>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="Black"/>
+            <span class="check__box"></span>
+            Черный
+            
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="White"/>
+            <span class="check__box"></span>
+            Белый 
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="Blue"/> 
+            <span class="check__box"></span>
+            Синий
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="Red"/> 
+            <span class="check__box"></span>
+            Красный
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="Pink"/> 
+            <span class="check__box"></span>
+            Розовый
+          </label>
+          
+        <h2>Bluetooth</h2>
+          <input class="radio__input" name="Bluetooth" type="radio" value="Have"/> Есть 
+          <input class="radio__input" name="Bluetooth" type="radio" value="HaveNot"/> Нет 
         
-      <h3>Bluetooth</h3>
-      <input class="radio__input" name="Bluetooth" type="radio"/> Есть 
-      <input class="radio__input" name="Bluetooth" type="radio"/> Нет 
-      
-      <button>Показать</button>
-    </section>
+        <input type="submit" value="Показать">
+      </form>
+    </fieldset>
+    
 
     <article>
       <a href="palka500.html"><img src="img/item-11.jpg" alt="Любительская селфи-палка">
