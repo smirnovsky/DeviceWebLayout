@@ -62,7 +62,6 @@
     <form action="https://echo.htmlacademy.ru/" method="GET">
       <fieldset>
         <legend>Цвет</legend>
-          <h2 class="visually-hidden">Цвет</h2>
             <label class="check option">
               <input class="check__input" type="checkbox" name="Black"/>
               <span class="check__box"></span>
@@ -95,10 +94,13 @@
           </fieldset>
 
       <fieldset>  
-        <legend>Bluetooth</legend>  
-          <h2 class="visually-hidden">Bluetooth</h2>
+        <legend>Bluetooth</legend>
+          <label>  
             <input class="radio__input" name="Bluetooth" type="radio" value="Have"/> Есть 
-            <input class="radio__input" name="Bluetooth" type="radio" value="HaveNot"/> Нет 
+          </label>
+          <label>
+            <input class="radio__input" name="Bluetooth" type="radio" value="HaveNot"/> Нет
+          </label> 
       </fieldset>  
         <input type="submit" value="Показать">
     </form>
