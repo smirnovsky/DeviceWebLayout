@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8" />
     <title>Моноподы для селфи</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
+      <a href="index.html"><img src="img/logo-device.svg" class="logo" width="163" height="35" alt="logo"></a>
 
-      <form>
+      <form class="header_search_text_style">
         <input type="search" placeholder="поиск по сайту" />
       </form>
 
       <nav>
         <ul>
-          <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li class="header_normal_text_style"><a href="">Войти</a></li>
+          <li class="header_normal_text_style"><a href="">Сравнить</a></li>
+          <li class="header_normal_text_style"><a href="">Корзина</a></li>
           <li>
-            Каталог товаров
-            <ul>
+            <span class="header_bold_text_style">Каталог товаров</span>
+            <ul class="header_normal_text_style">
               <li><a href="">Виртуальная реальность</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="inner.html">Моноподы для селфи</a></li>
               <li><a href="">Экшн-камеры</a></li>
               <li><a href="">Фитнес-браслеты</a></li>
               <li><a href="">Умные часы</a></li>
               <li><a href="">Квадрокоптер</a></li>
             </ul>
           </li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+          <li class="header_bold_text_style"><a href="">Доставка</a></li>
+          <li class="header_bold_text_style"><a href="">Гарантия</a></li>
+          <li class="header_bold_text_style"><a href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
   
-    <h1>Моноподы для селфи</h1>
-    <ul>
+    <h1 class="monopods_title_text_style">Моноподы для селфи</h1>
+    
+    <ul class="monopods_light_text_style">
       <li><a href="index.html">Главная</a></li>
       <li><a href="">Каталог</a></li>
       <li><a href="">Моноподы для селфи</a></li>
     </ul>
 
+    <p class="fiter_title_text_style">Фильтр</p> 
     <section>
-      <h2 class="visually-hidden">меню сортировки</h2>
-      <select>
+      <h2 class="fiter_title_text_style">Сортировка</h2>
+      <select class="monopods_light_text_style">
         <option>По цене</option>
         <option>По типу</option>
         <option>По популярности</option>
       </select>
     </section>
 
+  <div class="filter">   
     <section>
-      <h2>Стоимость</h2>
+      <h2 class="filter_bold_text_style">Стоимость</h2>
       <div class="slidecontainer">
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange"/>
       </div>
@@ -61,32 +65,32 @@
 
     <form action="https://echo.htmlacademy.ru/" method="GET">
       <fieldset>
-        <legend>Цвет</legend>
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="Black"/>
+        <legend class="filter_bold_text_style">Цвет</legend>
+        <label class="filter_normal_text_style check option">
+          <input class="check__input" type="checkbox" name="Black"/>
               <span class="check__box"></span>
               Черный
             </label>
               
-            <label class="check option">
+            <label class="filter_normal_text_style check option">
               <input class="check__input" type="checkbox" name="White"/>
               <span class="check__box"></span>
               Белый 
             </label>
 
-            <label class="check option">
+            <label class="filter_normal_text_style check option">
               <input class="check__input" type="checkbox" name="Blue"/> 
               <span class="check__box"></span>
               Синий
             </label>
 
-            <label class="check option">
+            <label class="filter_normal_text_style check option">
               <input class="check__input" type="checkbox" name="Red"/> 
               <span class="check__box"></span>
               Красный
             </label>
 
-            <label class="check option">
+            <label class="filter_normal_text_style check option">
               <input class="check__input" type="checkbox" name="Pink"/> 
               <span class="check__box"></span>
               Розовый
@@ -94,35 +98,40 @@
           </fieldset>
 
       <fieldset>  
-        <legend>Bluetooth</legend>
-          <label>  
+        <legend class="filter_bold_text_style">Bluetooth</legend>
+          <label class="filter_normal_text_style">  
             <input class="radio__input" name="Bluetooth" type="radio" value="Have"/> Есть 
           </label>
-          <label>
+          <label class="filter_normal_text_style">
             <input class="radio__input" name="Bluetooth" type="radio" value="HaveNot"/> Нет
           </label> 
       </fieldset>  
-        <input type="submit" value="Показать">
+        <input class="button_text_style" type="submit" value="Показать">
     </form>
+  </div>
 
     <article>
       <a href="palka500.html"><img src="img/item-11.jpg" alt="Любительская селфи-палка">
-        <h2>Любительская селфи-палка 500р</h2>
+        <h2 class="monopods_item_text_style">Любительская селфи-палка</h2>
+        <span class="price_text_style">500р</span>
       </a>
     </article>
     <article>
       <a href="palka500.html"><img src="img/item-21.jpg" alt="Профессиональная селфи-палка">
-        <h2>Профессиональная селфи-палка 1500р</h2>
+        <h2 class="monopods_item_text_style">Профессиональная селфи-палка </h2>
+        <div class="price_text_style">1500р</div>
       </a>
     </article>
     <article>
       <a href="palka500.html"><img src="img/item-31.jpg" alt="Непотопляемая селфи-палка">
-        <h2>Непотопляемая селфи-палка 2500р</h2>
+        <h2 class="monopods_item_text_style">Непотопляемая селфи-палка </h2>
+        <div class="price_text_style">2500р</div>
       </a>
     </article>
     <article>
       <a href="palka500.html"><img src="img/item-41.jpg" alt="Селфи-палка <q>Следуй за мной</q>">
-        <h2>"Селфи-палка <q>Следуй за мной</q> 4900р</h2>
+        <h2 class="monopods_item_text_style">"Селфи-палка <q>Следуй за мной</q> </h2>
+        <div class="price_text_style">4900р</div>
       </a>
     </article>
 
@@ -134,20 +143,20 @@
 
     <footer>
       <img src="img/logo-yellow.svg" alt="DEVICE" />
-      <address>г. Москва, ул. Строителей, 15</address>
-      <a href="tel:74954959595">7(495)495-95-95</a>
+      <address class="footer_normal_text_style">г. Москва, ул. Строителей, 15</address>
+      <a class="footer_normal_text_style" href="tel:74954959595">7(495)495-95-95</a>
 
       <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a class="footer_normal_text_style" href="">Войти</a></li>
+        <li><a class="footer_normal_text_style" href="">Сравнить</a></li>
+        <li><a class="footer_normal_text_style" href="">Корзина</a></li>
+        <li><a class="footer_bold_text_style" href="">Доставка</a></li>
+        <li><a class="footer_bold_text_style" href="">Гарантия</a></li>
+        <li><a class="footer_bold_text_style" href="">Контакты</a></li>
       </ul>
 
       <section>
-        <h2>социальные сети</h2>
+        <h2 class="visually-hidden">социальные сети</h2>
         <a href="http://www.instagram.com/">Instagram</a>
         <a href="http://www.facebook.com/">Facebook</a>
         <a href="http://www.twitter.com/">Twitter</a>
@@ -156,3 +165,4 @@
     </footer>
   </body>
 </html>
+
