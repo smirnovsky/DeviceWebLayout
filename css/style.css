@@ -15,23 +15,42 @@
 /* Font  */
 
 @font-face {
-  font-family: gilroy; 
-  src: url(../fonts/Gilroy-ExtraBold.ttf); 
- }
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v17-latin_cyrillic-300.woff2') format('woff2'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-300.woff') format('woff'); 
+}
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Regular.ttf);
-
-} 
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Gilroy'), local('gilroy'),
+       url('../fonts/Gilroy-Extrabold.woff2') format('woff2'), 
+       url('../fonts/Gilroy-Extrabold.woff') format('woff'); 
+}
 
 @font-face {
-  font-family: gilroy_light; 
-  src: url(../fonts/Gilroy-Regular.ttf); 
- }
+  font-family: 'Gilroy-light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy-light'), local('Gilroy-Light'),
+       url('../fonts/Gilroy-Light.woff2') format('woff2'), 
+       url('../fonts/Gilroy-Light.woff') format('woff'); 
+}
 
 
  /* Global */
+ body {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+ }
+ 
 
 header {
   background-color: var(--special-yellow);
@@ -40,9 +59,7 @@ header {
   margin-right: 140px;
 }
 
-footer {
-  background-color: var(--basic-black);
-}
+
 
 input {
   border: 0px;
@@ -73,7 +90,7 @@ li {
 }
 
 
-/* Main nav */
+/* Site Navigation */
 
 .logo {
   position: absolute;
@@ -83,19 +100,62 @@ li {
   top: 0px;
 }
 
-.header_search_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
+/* link style */
+
+.link_style:hover,
+.link_style:focus {
+  color: var(--basic-black);
+  opacity: 0.6;
+
+ }
+.link_style:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+ }
+
+.link_style_2:hover,
+.link_style_2:focus {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.link_style_2:active {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.link_style_3:hover,
+.link_style_3:focus {
+  color: var(--basic-white);
+  opacity: 0.6;
+}
+
+.link_style_3:active {
+  color: var(--basic-white);
+  opacity: 0.3;
+}
+
+ 
+
+ /* search  */
+
+.search {
   line-height: 20px;
   color: var(--basic-black)
-}  
+} 
+.search:hover,
+.search:focus {
+  color: var(--basic-black);
+  opacity: 0.6;
+ }
 
-.header_bold_text_style {
+.search:active {
+  color: var(--basic-black);
+}
+
+
+.header_bold {
   font-family: gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.1em;
@@ -103,11 +163,7 @@ li {
   color: var(--basic-black); 
 }
 
-.header_normal_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
+.header_light {
   line-height: 20px;
   color: var(--basic-black);
 }
@@ -120,10 +176,8 @@ li {
 
 }
 
-.fiter_title_text_style {
+.fiter_title {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -132,19 +186,14 @@ li {
 
 }
 
-.filter_normal_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
+.check_color {
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
 }
 
-.filter_bold_text_style {
+.characteristics {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -155,33 +204,31 @@ li {
 
 /* Footer */
 
-.footer_normal_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
+footer {
+  background-color: var(--basic-dark);
+}
+
+.footer_nav {
+  font-family: Open Sans;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-white);
 }
 
-.footer_bold_text_style {
+.footer_services {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color var(--basic-white);
+  color: var(--basic-white);
 }
 
 
 /* Cardsection */
 
-.cardsection_title_text_style {
+.cardsection_services {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
@@ -189,21 +236,14 @@ li {
 
 }
 
-.cardsection_normal_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 28px;
-  color: var(--basic-black);
+.cardsection_text {
+ color: var(--basic-black);
 
 }
 
 
-.delivery_text_style {
+.delivery {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 16px;
   line-height: 28px;
   color: var(--basic-black);
@@ -213,20 +253,16 @@ li {
 
 /* Monopods */
 
-.monopods_title_text_style {
+.monopods_title {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
 
 }
 
-.monopods_light_text_style {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 300;
+.monopods_options {
+  font-family: Open Sans;
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
@@ -234,10 +270,8 @@ li {
 
 }
 
-.monopods_item_text_style {
+.monopods_item {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -246,10 +280,8 @@ li {
 
 /* Price */
 
-.price_text_style {
-  font-family: Gilroy_light;
-  font-style: normal;
-  font-weight: 300;
+.price {
+  font-family: Gilroy-light;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
@@ -259,13 +291,99 @@ li {
 
 /* Buttons */
 
-.button_text_style {
+button
+{
+
+border:none;
+
+}
+
+.button {
+  background-color: var(--special-yellow-dark);
+  position:;
+  width: 200px;
+  height: 8px;
   font-family: Gilroy;
   font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+  
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--special-yellow-dark);
+  position:;
+  width: 200px;
+  height: 40px;
+}
+.button:active {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+
+
+/* Pop up */
+.popup_bold {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-black);
+
+}
+
+.popup_normal {
+  font-family: Gilroy-Light;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Categories */
+
+.categories {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+
+}
+
+/* Slider */
+
+.slider_title {
+  font-family: Gilroy;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+
+}
+
+.slider_text {
+  line-height: 20px;
+  color: var(--basic-black);
+
+}
+
+.feature_text_big {
+  font-family: Gilroy-light;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+
+}
+
+.feature_text_small {
+  font-family: Gilroy-light;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+
 }
