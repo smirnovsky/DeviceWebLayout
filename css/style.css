@@ -300,7 +300,7 @@ border:none;
 
 .button {
   background-color: var(--special-yellow-dark);
-  position:;
+  position: relative;
   width: 200px;
   height: 8px;
   font-family: Gilroy;
@@ -309,13 +309,14 @@ border:none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+  justify-self: center;
   
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--special-yellow-dark);
-  position:;
+  position: relative;
   width: 200px;
   height: 40px;
 }
