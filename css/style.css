@@ -96,6 +96,10 @@ border:none;
   text-align: center;
 }
 
+.main_container {
+  min-width: 1160px;
+}
+
 /* Hidden text */
 
 .visually-hidden {
@@ -194,18 +198,19 @@ border:none;
 /* -----------------------FOOTER------------------------  */
 
 .footer_logo {
-  padding-right: 1137px;
+  
 }
 
 .footer_block1 {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+  display: flex;
+  justify-content: space-between;
   padding-top: 66px;
 }
 
 .footer_block2 {
-  display: grid;
-  grid-template-columns: 30% 13% 13% 13% 31%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 39px;
 }
 
@@ -213,12 +218,11 @@ border:none;
   font-family: Open Sans;
   font-size: 15px;
   line-height: 20px;
-  
   padding-bottom: 2px;
   padding-top: 6px;
-  display: grid;
-  grid-template-columns: 80% 10% 10% 
-  
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .footer_services {
@@ -354,19 +358,23 @@ border:none;
 /* ----PRODUCTS---- */
 
 .products_grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top: 96px; 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+  
 }
 
 .products_img {
   background-color: var(--special-yellow);
-  width: 160px;
+  width: 15%;
   height: 160px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+
 }
 
 .products_descript {
@@ -424,21 +432,17 @@ border:none;
 
 /* -----LOGO----- */
 .logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   margin-top: 90px; 
-  align-items: center;
 }
 
-.logo_img {
- 
-}
 
 /* -----CONTACTS----- */
 
 .contacts {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: row;
   margin-top: 90px;
   margin-bottom: 0px;
   padding-bottom: 86px;
@@ -495,7 +499,6 @@ border:none;
 /* --------------------------INNER PAGE--------------------------- */
 
 
-
 .title {
   font-family: Gilroy;
   font-style: normal;
@@ -503,7 +506,6 @@ border:none;
   font-size: 47px;
   line-height: 58px;
   padding-left: 200px;
-  padding-top: 44px;
 }
 
 .inner_main {
@@ -522,8 +524,8 @@ border:none;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
-  display: grid;
-  grid-template-columns: 5% 1% 5% 1% 1fr 70%;
+  display: flex;
+  justify-content: flex-start;
   padding-left: 200px;
   padding-top: 30px;
   margin-right: 0px;
@@ -587,8 +589,8 @@ border:none;
 }
 
 .sort {
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
+  justify-content: space-around;
   background-color: var(--basic-grey-light);
   margin-right: 0px;
 }
@@ -657,8 +659,8 @@ border:none;
 }
 
 .nav_pages {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
+  display: flex;
+  justify-content: space-between;
   padding-left: 30px;
   padding-top: 25px;
   padding-bottom: 30px;
