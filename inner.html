@@ -8,32 +8,38 @@
   </head>
   <body class="main_container">
     <header>
-      <a class="header_logo link_style1" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
+      <a class="header_logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
       <div class="header_block1">
         <form>
-          <input class="search" type="search" placeholder="поиск по сайту" />
+          <input class="search" type="search" placeholder="Поиск по сайту" />
           <input class="search_button" type="submit" value="Найти"/>
         </form>  
-        <a class="link_style1" href="">Войти</a></li>
-        <a class="link_style1" href="">Сравнить</a></li>
-        <a class="link_style1" href="">Корзина</a></li>
+        <a class="link_style1 enter_img" href=""> Войти</a>
+        <a class="link_style1 compare_img" href="">Сравнить</a>
+        <a class="link_style1 basket_img" href="">Корзина</a>
       </div>
       <nav>  
         <ul class="header_block2">  
-          <li class="link_style1">
-            <span>Каталог товаров</span>
-            <!-- <ul>
-              <li class="link_style1"><a href="">Виртуальная реальность</a></li>
-              <li class="link_style1"><a href="inner.html">Моноподы для селфи</a></li>
-              <li class="link_style1"><a href="">Экшн-камеры</a></li>
-              <li class="link_style1"><a href="">Фитнес-браслеты</a></li>
-              <li class="link_style1"><a href="">Умные часы</a></li>
-              <li class="link_style1"><a href="">Квадрокоптер</a></li>
-            </ul> -->
+          <li>
+            <span class="header_block_style link_style1">Каталог товаров</span>
+            <ul class="catalog_menu">
+              <div class="menu_style">
+              <li class="menu_style2 link_style1"><a href="">Виртуальная реальность</a></li>
+              <li class="menu_style2 link_style1"><a href="inner.html">Моноподы для селфи</a></li>
+              <li class="menu_style2 link_style1"><a href="">Экшн-камеры</a></li>
+              </div>
+              <div class="menu_style">
+              <li class="menu_style2 link_style1"><a href="">Фитнес-браслеты</a></li>
+              <li class="menu_style2 link_style1"><a href="">Умные часы</a></li>
+              </div>
+              <div class="menu_style">
+              <li class="menu_style2 link_style1"><a href="">Квадрокоптер</a></li>
+              </div>
+            </ul>
           </li>
-          <li class="link_style1"><a href="">Доставка</a></li>
-          <li class="link_style1"><a href="">Гарантия</a></li>
-          <li class="link_style1"><a href="">Контакты</a></li>
+          <li class="header_block_style link_style1"><a href="">Доставка</a></li>
+          <li class="header_block_style link_style1"><a href="">Гарантия</a></li>
+          <li class="header_block_style link_style1"><a href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -73,57 +79,59 @@
       </section>
 
      <div class="filter">   
-      <section>
-        <h2 class="filter_bold" >Стоимость</h2>
+      <section class="multiselect">
+        <h2 class="border_top filter_bold" >Стоимость</h2>
         <div>
           <input type="range" min="1" max="100" value="50" class="slider" id="myRange"/>
         </div>
       </section>
 
-      <form action="https://echo.htmlacademy.ru/" method="GET">
+      <form class="border_top" action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset class="colors">
           <legend class="filter_bold">Цвет</legend>
-          <label class="filter_normal">
-            <input type="checkbox" name="Black"/>
-            <span></span>
-            Черный
+          <label class="filter_normal check_color check option">
+            <input class="check_input" type="checkbox" name="Black" class="check_box"/>
+            <span class="check_box"></span>
+            <div class="text_type"> Черный</div>
           </label>
+
             
-          <label class="filter_normal">
-            <input type="checkbox" name="White"/>
-            <span></span>
-            Белый 
+          <label class="filter_normal check_color check option">
+            <input class="check_input" type="checkbox" name="White"/>
+            <span class="check_box"></span>
+            <div class="text_type">Белый</div> 
           </label>
 
-          <label class="filter_normal">
-            <input type="checkbox" name="Blue"/> 
-            <span></span>
-            Синий
+          <label class="filter_normal check_color check option">
+            <input class="check_input" type="checkbox" name="Blue"/> 
+            <span class="check_box"></span>
+            <div class="text_type">Синий</div>
           </label>
 
-          <label class="filter_normal">
-            <input type="checkbox" name="Red"/> 
-            <span></span>
-            Красный
+          <label class="filter_normal check_color check option">
+            <input class="check_input" type="checkbox" name="Red"/> 
+            <span class="check_box"></span>
+            <div class="text_type">Красный</div>
           </label>
 
-          <label class="filter_normal">
-            <input type="checkbox" name="Pink"/> 
-            <span></span>
-            Розовый
+          <label class="filter_normal check_color check option">
+            <input class="check_input" type="checkbox" name="Pink"/> 
+            <span class="check_box"></span>
+            <div class="text_type">Розовый</div>
           </label>
         </fieldset>
-
+       <div class="border_top"> 
         <fieldset class="bluetooth">  
-          <legend class="filter_bold">Bluetooth</legend>
-            <label class="filter_normal">  
-              <input name="Bluetooth" type="radio" value="Have"/> Есть 
+          <legend class="filter_bold title_margin">Bluetooth</legend>
+            <label class="filter_normal radio_style">  
+              <input name="Bluetooth" type="radio" value="Have"/>Есть 
             </label>
-            <label class="filter_normal">
-              <input name="Bluetooth" type="radio" value="HaveNot"/> Нет
+            <label class="filter_normal radio_style">
+              <input name="Bluetooth" type="radio" value="HaveNot"/>Нет
             </label> 
-        </fieldset>  
-          <input type="submit" value="Показать">
+        </fieldset>
+       </div>  
+          <input class="button" type="submit" value="Показать">
       </form>
      </div>
       <div>
@@ -152,9 +160,9 @@
         <div class="nav_pages" >
           <a class="back" href="">Назад</a>
           <span class="pages">  
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
+            <a class="page_1" href="">1</a>
+            <a class="page_2" href="">2</a>
+            <a class="page_3" href="">3</a>
           </span>  
           <a class="forward" href="">Вперед</a>
         </div>  
@@ -163,34 +171,33 @@
     </main>  
 
     <footer>
-
       <div class="footer_block3">  
-        <a class="enter link_style2" href="">Войти</a></li>
-        <a class="compare link_style2" href="">Сравнить</a></li>
-        <a class="basket link_style2" href="">Корзина</a></li>
+        <a class="enter link_style2 footer_enter_img" href="">Войти</a>
+        <a class="compare link_style2 footer_chart_img" href="">Сравнить</a>
+        <a class="basket link_style2 footer_basket_img" href="">Корзина</a>
       </div>  
 
-      <a class="footer_logo link_style1" href="index.html"><img src="img/logo-yellow.svg" alt="DEVICE" /></a>
+      <a class="footer_logo" href="index.html"><img src="img/logo-yellow.svg" alt="DEVICE" /></a>
 
       <div class="footer_block2">
        <address class="adress">г. Москва, ул. Строителей, 15</address>
        <div>
-        <a class="footer_services link_style3" href="">Доставка</a></li>
-        <a class="footer_services link_style3" href="">Гарантия</a></li>
-        <a class="footer_services link_style3" href="">Контакты</a></li>
+        <a class="footer_services link_style3" href="">Доставка</a>
+        <a class="footer_services link_style3" href="">Гарантия</a>
+        <a class="footer_services link_style3" href="">Контакты</a>
        </div>
        <a class="phone" href="tel:74954959595">+7(495)495-95-95</a>
       </div>
 
       <section class="footer_block1">
         <h2 class="visually-hidden">социальные сети</h2>
-         <span>________</span>
+         <div class="rect_footer"></div>
          <div class="social">
-          <a href="http://www.instagram.com/">Instagram</a>
-          <a href="http://www.facebook.com/">Facebook</a>
-          <a href="http://www.twitter.com/">Twitter</a>
+          <a class="logo_inst" href="http://www.instagram.com/"><img src="img/icon_instagram.png" alt="Instagram"></a>
+          <a class="logo_face" href="http://www.facebook.com/"><img src="img/icon_facebook.png" alt="Facebook"></a>
+          <a class="logo_twit" href="http://www.twitter.com/"><img src="img/icon_witter.png" alt="Twitter"></a>
          </div> 
-        <a class="academy" href="http://htmlacademy.ru/">HtmlAcademy</a>
+        <a  class="academy" href="http://htmlacademy.ru/"><img src="img/logo-html.png" alt=" HTML Academy"/></a>
       </section>
     </footer>
   </body>
