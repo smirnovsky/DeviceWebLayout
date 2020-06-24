@@ -10,7 +10,8 @@
     <header>
       <a class="header_logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
       <div class="header_block1">
-        <form>
+        <form class="search_flex">
+          <span class="search_img"></span>
           <input class="search" type="search" placeholder="Поиск по сайту" />
           <input class="search_button" type="submit" value="Найти"/>
         </form>  
@@ -21,7 +22,10 @@
       <nav>  
         <ul class="header_block2">  
           <li>
-            <span class="header_block_style link_style1">Каталог товаров</span>
+            <div class="catalog link_style1 header_block_style">
+              <div>Каталог товаров</div>
+              <img class="plus_img" src="./img/icon_plus.png" alt="+">
+            </div>
             <ul class="catalog_menu">
               <div class="menu_style">
               <li class="menu_style2 link_style1"><a href="">Виртуальная реальность</a></li>
@@ -187,6 +191,7 @@
       </section>
       <div class="contacts"> 
         <section>
+          <div class="rect_contacts"></div>
           <h2 class="contacts_title">О нас</h2>
           <p class="contacts_text">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -197,15 +202,16 @@
             работает со многими транспортными компаниями
           </p>
           <ul class="delivery">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="delivery_img">Деловые линии</li>
+            <li class="delivery_img">Автотрейдинг</li>
+            <li class="delivery_img">ЖелДорЭкспедиция</li>
           </ul>
 
           <a class="button" href="">Подробнее о нас</a>
         </section>
 
         <section>
+          <div class="rect_contacts"></div>
           <h2 class="contacts_title">Контакты</h2>
 
           <p class="contacts_text">

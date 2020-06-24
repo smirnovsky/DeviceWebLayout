@@ -172,9 +172,7 @@ footer {
   background-image: url("../img/icon_user.png");
   display: block;
   background-repeat: no-repeat;
-  height:24px;
   padding-left:22px;
-  width:13px;
   background-position-y: 3px;
 }
 
@@ -199,11 +197,25 @@ footer {
   background-position-y: 3px;
 }
 
+input[type="search"]::placeholder {
+  opacity: 0.3;
+}
+
+input[type="search"]:hover::placeholder {
+  opacity: 0.6;
+}
+
 .search {
-  padding-bottom: 15px;
- border: 0px;
- opacity: 0,3;
+ padding-bottom: 10px;
+ border: none;
+ opacity: 1;
  background-color: var(--special-yellow);
+ outline-width: 0;
+}
+
+.search:active {
+  border: none;
+  outline-width: 0;
 }
 
 .search:hover,
@@ -211,12 +223,22 @@ footer {
   border-bottom: 2px solid black;
 }
 
-.search_button {
+.search:focus + .search_button[type="submit"] {
   background-color: var(--special-yellow);
-  padding: 15px;
+  padding: 10px;
   text-transform: uppercase;
-  
+  border: 2px solid var(--basic-black);
 }
+
+.search:focus + .search_button[type="submit"]:hover {
+  background-color: var(--basic-black);
+}
+
+.search:not(:focus) + .search_button[type="submit"] {
+  visibility: hidden;
+}
+
+
 
 .search_button:hover,
 .search_button:focus {
@@ -227,6 +249,22 @@ footer {
 .search_button:active {
   background-color: var(--basic-black);
   color: var(--basic-white);
+}
+
+.search_img {
+  background-image: url("../img/icon_search.png");
+  display: block;
+  background-repeat: no-repeat;
+  height:32px;
+  padding-left:22px;
+  width:13px;
+  background-position-y: 12px
+}
+
+.search_flex {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
 }
 
 .header_logo {
@@ -259,10 +297,33 @@ footer {
   line-height: 20px;
 }
 
+.header_block11 {
+  display: grid;
+  grid-template-columns: 58% 22% 10% 10%;
+  padding-top: 44px;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.valentin {
+  display: flex;
+  flex-direction: row;
+}
+
+.exit {
+  margin-left: 17px;
+  opacity: 0.3;
+}
+
 .header_block2 {
   display: grid;
   grid-template-columns: 61% 13% 13% 13%;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 50px;
@@ -291,6 +352,12 @@ footer {
   margin-top: 12px;
 }
 
+.catalog {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
 .menu_style {
   flex: 33%;
 }
@@ -298,9 +365,12 @@ footer {
 .menu_style2 {
   margin-bottom: 20px;
   margin-top: 12px;
-  
 }
 
+.plus_img {
+  margin-left: 16px;
+  height: 18px;
+}
 /* -----------------------FOOTER------------------------  */
 
 .footer_logo:hover,
@@ -664,7 +734,7 @@ footer {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 
 .contacts_text {
@@ -677,6 +747,12 @@ footer {
   padding-right: 128px;
 }
 
+.rect_contacts {
+  background-color: var(--basic-black);
+  width: 80px;
+  height: 7px;
+}
+
 .delivery {
   font-family: Gilroy;
   font-style: normal;
@@ -687,6 +763,13 @@ footer {
   padding-bottom: 70px;
 }
 
+.delivery_img {
+  background-image: url("../img/Ellipse3.png");
+  display: block;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-position-y: 10px;
+}
 
 .map {
   margin-top: 40px;
@@ -743,7 +826,7 @@ footer {
 .breadcrumbs_link {
   display: flex;
   flex-direction: row;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .breadcrumbs_style:active {
@@ -758,7 +841,11 @@ footer {
 }
 
 .arrow {
-  color: var(--basic-black);
+  background-image: url("../img/icon_arrow_nav.png");
+  display: block;
+  background-repeat: no-repeat;
+  padding-left:22px;
+  background-position-y: 4px;
 }
 
 .filter_bold {
@@ -925,7 +1012,7 @@ footer {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-right: 20px;
- opacity: 0.3;
+  opacity: 1;
 } 
 
 .page_1:hover,
@@ -1051,6 +1138,38 @@ fieldset {
 .check_input:checked + .check_box {
   background-image: url(../img/checkbox-on.svg);
 }
+
+.check_input:hover + .check_box {
+  opacity: 0.6;
+}
+
+.check_input:focus + .check_box {
+  opacity: 0.6;
+}
+
+.check_input:disabled + .check_box {
+  opacity: 0.25;
+}
+
+
+
+
+input[type="radio"]:disabled { opacity: 0.25; }
+
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+  opacity: 0.6;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+input[type="radio"]:checked:hover {
+  opacity: 0.6;
+}
+
+
 
 input[type='radio'] {
   -webkit-appearance: none;

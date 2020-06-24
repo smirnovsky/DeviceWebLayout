@@ -9,19 +9,26 @@
   <body class="main_container">
     <header>
       <a class="header_logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
-      <div class="header_block1">
-        <form>
+      <div class="header_block11">
+        <form class="search_flex">
+          <span class="search_img"></span>
           <input class="search" type="search" placeholder="Поиск по сайту" />
           <input class="search_button" type="submit" value="Найти"/>
-        </form>  
-        <a class="link_style1 enter_img" href=""> Войти</a>
+        </form>
+        <div class="valentin"> 
+        <a class="link_style1 enter_img" href=""> Валентин Петухов</a>
+        <a class="link_style1 exit" href=""> Выйти</a>
+        </div>
         <a class="link_style1 compare_img" href="">Сравнить</a>
         <a class="link_style1 basket_img" href="">Корзина</a>
       </div>
       <nav>  
         <ul class="header_block2">  
           <li>
-            <span class="header_block_style link_style1">Каталог товаров</span>
+            <div class="catalog link_style1 header_block_style">
+              <div>Каталог товаров</div>
+              <img class="plus_img" src="./img/icon_plus.png" alt="+">
+            </div>
             <ul class="catalog_menu">
               <div class="menu_style">
               <li class="menu_style2 link_style1"><a href="">Виртуальная реальность</a></li>
@@ -54,13 +61,13 @@
       <li>
         <a class="breadcrumbs_link" href="index.html">
           <div class="breadcrumbs_style"> Главная</div> 
-          <div class="arrow">></div>
+          <div class="arrow"></div>
         </a>
       </li>
       <li>
         <a class="breadcrumbs_link" href="">
           <div class="breadcrumbs_style"> Каталог</div> 
-          <div>></div>
+          <div class="arrow"></div>
         </a>
       </li>
       <li class="breadcrumbs">Моноподы для селфи</li>
@@ -90,7 +97,7 @@
         <fieldset class="colors">
           <legend class="filter_bold">Цвет</legend>
           <label class="filter_normal check_color check option">
-            <input class="check_input" type="checkbox" name="Black" class="check_box"/>
+            <input class="check_input" type="checkbox" name="Black" class="check_box" disabled checked/>
             <span class="check_box"></span>
             <div class="text_type"> Черный</div>
           </label>
@@ -131,7 +138,7 @@
             </label> 
         </fieldset>
        </div>  
-          <input class="button" type="submit" value="Показать">
+          <button class="button" type="submit">Показать</button>
       </form>
      </div>
       <div>
