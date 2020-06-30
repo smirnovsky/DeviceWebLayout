@@ -33,11 +33,6 @@ main.addEventListener("click", function (evt) {
   menu.classList.remove("catalog_show");
 });
 
-
-card.addEventListener("focus", function() {
-  card_hover.classList.add("card_hover_show");
-});
-
 btn.addEventListener("click", function() {
   btn.classList.remove("service_btn");
   btn1.classList.remove("service_btn1");
