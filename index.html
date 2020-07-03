@@ -8,7 +8,7 @@
   </head>
   <body class="main_container">
     <header>
-      <a class="header_logo" href="index.html"
+      <a class="header_logo"
         ><img src="img/logo-device.svg" width="163" height="35" alt="logo"
       /></a>
       <div class="header_block1">
@@ -23,13 +23,13 @@
       </div>
       <nav>
         <ul class="header_block2">
-          <li>
+          <li class="main_catalog">
             <div class="catalog link_style1 header_block_style menu_close">
-              <div>Каталог товаров</div>
+              <a href="#">Каталог товаров</a>
               <img class="plus_img" src="./img/icon_plus.png" alt="+" />
             </div>
             <ul class="catalog_menu">
-              <div class="menu_style">
+              <div>
                 <li class="menu_style2 link_style1">
                   <a href="">Виртуальная реальность</a>
                 </li>
@@ -40,7 +40,7 @@
                   <a href="">Экшн-камеры</a>
                 </li>
               </div>
-              <div class="menu_style">
+              <div>
                 <li class="menu_style2 link_style1">
                   <a href="">Фитнес-браслеты</a>
                 </li>
@@ -48,7 +48,7 @@
                   <a href="">Умные часы</a>
                 </li>
               </div>
-              <div class="menu_style">
+              <div>
                 <li class="menu_style2 link_style1">
                   <a href="">Квадрокоптер</a>
                 </li>
@@ -188,9 +188,9 @@
         <div class="services_bg"></div>
         <h2 class="visually-hidden">Services</h2>
         <div class="button_grid">
-          <label for="btn_1" class="service_btn delivery_btn">Доставка</label>
-          <label for="btn_2" class="service_btn quality_btn">Гарантия</label>
-          <label for="btn_3" class="service_btn credit_btn">Кредит</label>
+          <label class="service_btn1 delivery_btn">Доставка</label>
+          <label class="service_btn quality_btn">Гарантия</label>
+          <label class="service_btn credit_btn">Кредит</label>
         </div>
         <section class="delivery_def">
           <h3 class="services_title">Доставка</h3>
@@ -270,7 +270,7 @@
               alt="Метро Университет, ул. Строителей 15"
             />
           </a>
-          <a class="button" href="">Напишите нам</a>
+          <a class="button write_us" href="">Напишите нам</a>
         </section>
       </div>
       <section class="modal_map">
@@ -290,7 +290,7 @@
         <button class="map_close_button"></button>
       </section>
 
-      <!-- <section class="modal_map">
+      <section class="modal_map">
         <h2 class="visually-hidden">big map</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473436!2d37.52742931574823!3d55.68703400453022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593355665058!5m2!1sru!2sru" width="100%" 
         height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -298,7 +298,7 @@
           <div class="map_close">
             <button class="map_close_button"></button>
           </div> 
-      </section> -->
+      </section>
 
       <section class="modal modal_write">
         <h2 class="visually-hidden">Write Us</h2>
@@ -339,7 +339,7 @@
             ></textarea>
           </div>
           <div class="form_row2">
-            <button class="button" type="submit">Отправить</button>
+            <button class="button button_form" type="submit">Отправить</button>
           </div>
         </form>
       </section>

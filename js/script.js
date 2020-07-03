@@ -1,11 +1,7 @@
-var main = document.querySelector(".main_container")
-var plus = document.querySelector(".catalog");
-var menu = document.querySelector(".catalog_menu");
-
 var write_button = document.querySelector(".write_us");
 var popup = document.querySelector(".modal");
 var close_popup = popup.querySelector(".close_button");
-var form = popup.querySelector(".form")
+var form = popup.querySelector(".form");
 var login = popup.querySelector(".form_login");
 var email = popup.querySelector(".form_email");
 var text = popup.querySelector(".form_text");
@@ -20,18 +16,6 @@ var btn2 = document.querySelector(".credit_btn");
 var info = document.querySelector(".delivery_def");
 var info1 = document.querySelector(".quality");
 var info2 = document.querySelector(".credit");
-
-var card = document.querySelector(".product_img");
-var card_hover = document.querySelector(".card_hover");
-
-plus.addEventListener("mouseover", function (evt) {
-  evt.preventDefault();
-  menu.classList.add("catalog_show");
-});
-
-main.addEventListener("click", function (evt) {
-  menu.classList.remove("catalog_show");
-});
 
 btn.addEventListener("click", function() {
   btn.classList.remove("service_btn");
