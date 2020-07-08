@@ -62,18 +62,18 @@ select {
 
 header {
   background-color: var(--special-yellow);
-  margin-top: 40px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-top: 43px;
+  margin-left: 150px;
+  margin-right: 90px;
 }
 
 footer {
   background-color: var(--basic-dark);
-  padding-top: 51px;
+  padding-top: 45px;
   padding-bottom: 63px;
   padding-left: 140px;
   padding-right: 140px;
-  margin-top: 0px;
+  margin-top: -20px;
 }
 
 .button::after {
@@ -192,14 +192,15 @@ footer {
   display: block;
   background-repeat: no-repeat;
   height: 24px;
-  padding-left: 22px;
-  width: 13px;
+  padding-left: 20px;
+  width: 10px;
   background-position-y: 5px;
   margin-top: 10px;
 }
 
 input[type="search"]::placeholder {
   opacity: 0.3;
+  font-size: 17px;
 }
 
 input[type="search"]:hover::placeholder {
@@ -207,7 +208,7 @@ input[type="search"]:hover::placeholder {
 }
 
 .search {
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   border: none;
   opacity: 1;
   background-color: var(--special-yellow);
@@ -263,15 +264,15 @@ input[type="search"]:hover::placeholder {
 .search_flex {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 40px;
 }
 
 .header_logo {
   position: absolute;
-  width: 163px;
-  height: 35px;
-  left: 200px;
-  top: 20px;
+  width: 180px;
+  height: 70px;
+  left: 220px;
+  top: 3px;
 }
 
 .header_logo:hover,
@@ -285,10 +286,10 @@ input[type="search"]:hover::placeholder {
 
 .header_block1 {
   display: grid;
-  grid-template-columns: 51% 25% 12% 12%;
-  padding-top: 44px;
-  padding-right: 60px;
-  padding-left: 60px;
+  grid-template-columns: 61% 21% 10% 10%;
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-left: 70px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
@@ -322,10 +323,10 @@ input[type="search"]:hover::placeholder {
 
 .header_block2 {
   display: grid;
-  grid-template-columns: 54% 15% 15% 16%;
-  padding-top: 20px;
-  padding-right: 60px;
-  padding-left: 60px;
+  grid-template-columns: 52% 15% 17% 16%;
+  padding-top: 30px;
+  padding-right: 65px;
+  padding-left: 70px;
   padding-bottom: 50px;
 }
 
@@ -336,25 +337,26 @@ input[type="search"]:hover::placeholder {
 .header_block3 {
   display: grid;
   grid-template-columns: 50% 25% 25%;
-  padding-top: 20px;
-  padding-right: 60px;
-  padding-left: 60px;
-  height: 110px;
+  padding-top: 1px;
+  padding-right: 30px;
+  padding-left: 50px;
+  height: 100px;
 }
 
 .white_block {
-  width: 100px;
-  height: 7px;
+  width: 110px;
+  height: 8px;
   background-color: var(--basic-white);
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: -10px;
 }
 
 .white_number {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 179px;
-  line-height: 219px;
+  font-size: 195px;
+  line-height: 150px;
   text-transform: uppercase;
   color: var(--basic-white);
   text-align: center;
@@ -365,7 +367,7 @@ input[type="search"]:hover::placeholder {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -378,10 +380,10 @@ input[type="search"]:hover::placeholder {
   z-index: 11;
   display: none;
   flex-wrap: wrap;
-
   width: auto;
   height: 196px;
-  margin: 0;
+  margin-left: 10px;
+  margin-right: -51px;
   left: 140px;
   right: 140px;
   padding: 0;
@@ -424,6 +426,10 @@ input[type="search"]:hover::placeholder {
   height: 18px;
 }
 /* -----------------------FOOTER------------------------  */
+
+.footer_logo {
+  margin-left: 10px;
+}
 
 .footer_logo:hover,
 .footer_logo:focus {
@@ -483,6 +489,7 @@ input[type="search"]:hover::placeholder {
   width: 80px;
   height: 7px;
   align-self: center;
+  margin-left: 15px;
 }
 
 .footer_enter_img {
@@ -517,7 +524,7 @@ input[type="search"]:hover::placeholder {
 .footer_block1 {
   display: flex;
   justify-content: space-between;
-  padding-top: 66px;
+  margin-top: 70px;
 }
 
 .footer_block2 {
@@ -531,12 +538,11 @@ input[type="search"]:hover::placeholder {
   font-family: Open Sans;
   font-size: 15px;
   line-height: 20px;
-  padding-bottom: 2px;
-  padding-top: 6px;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   margin-left: 75%;
+  margin-top: 4px;
 }
 
 .footer_services {
@@ -627,25 +633,26 @@ input[type="search"]:hover::placeholder {
 .slider_content {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-left: 89px;
-  margin-right: 47px;
+  margin-left: 110px;
+  margin-right: 40px;
   z-index: 10;
   position: relative;
-  margin-top: -140px;
+  margin-top: -150px;
 }
 
 .slider_img {
-  padding-top: 17px;
+  
 }
 
 .stiller_title {
-  padding-top: 50px;
-  padding-right: 82px;
+  padding-top: 52px;
+  padding-right: 55px;
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
+  font-size: 55px;
+  line-height: 62px;
+  margin-left: 20px;
 }
 
 .stiller_text {
@@ -655,13 +662,15 @@ input[type="search"]:hover::placeholder {
   font-size: 15px;
   line-height: 20px;
   padding-right: 35px;
+  margin-top: -24px;
+  margin-left: 15px;
 }
 
 .slider_buttons {
   display: grid;
   grid-template-columns: 85% 5% 5% 5%;
-  padding-top: 60px;
-  padding-right: 41px;
+  padding-top: 48px;
+  padding-right: 11px;
   align-items: center;
 }
 
@@ -691,8 +700,8 @@ input[type="search"]:hover::placeholder {
 .slider_char {
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 33% 33% 34%;
-  padding-right: 69px;
+  grid-template-columns: 35% 31% 34%;
+  padding-right: 50px;
   margin-top: -60px;
 }
 
@@ -701,9 +710,10 @@ input[type="search"]:hover::placeholder {
   font-family: Gilroy-light;
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 41px;
+  line-height: 39px;
   letter-spacing: 0.1em;
+  margin-left: 15px;
 }
 
 .slider_char2 {
@@ -714,13 +724,14 @@ input[type="search"]:hover::placeholder {
   line-height: 15px;
   letter-spacing: 0.1em;
   padding-bottom: 0px;
-  padding-top: 15px;
+  padding-top: 25px;
+  margin-left: 15px;
 }
 
 /* ----PRODUCTS---- */
 
 .products_grid {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -729,35 +740,38 @@ input[type="search"]:hover::placeholder {
 }
 
 .products_cell {
-  width: 160px;
+  width: 90px;
+  margin-right: 15px;
 }
 
 .products_img {
   background-color: var(--special-yellow);
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  margin-left: -25px;
 }
 
 .products_descript {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.05em;
   padding-top: 38px;
-  width: 160px;
+  width: 180px;
+
 }
 
 /* -----SERVICES----- */
 
 .main_services {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 26% 74%;
   padding-top: 84px;
   padding-right: 8px;
   padding-bottom: 68px;
@@ -768,7 +782,7 @@ input[type="search"]:hover::placeholder {
   z-index: -1;
   position: absolute;
   width: 100%;
-  height: 288px;
+  height: 315px;
   margin-left: -140px;
   margin-top: 80px;
 }
@@ -778,7 +792,7 @@ input[type="search"]:hover::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 320px;
+  height: 310px;
 }
 
 .flex_info {
@@ -890,26 +904,38 @@ input[type="search"]:hover::placeholder {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 47px;
+  font-size: 50px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  margin-left: 20px;
+
 }
 
 .services_text {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 35px;
   letter-spacing: 0.1em;
-  margin-right: 56px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 55px;
+}
+
+.services_img {
+  margin-top: -110px;
+  margin-left: 40px;
+  margin-right: -40px;
 }
 
 /* -----LOGO----- */
 .logo {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
+  margin-top: 125px;
+  margin-left: 25px;
+  margin-right: -35px;
 }
 
 .logo1::before {
@@ -919,7 +945,7 @@ input[type="search"]:hover::placeholder {
   height: 100px;
   background-image: url("../img/logo1_hover.png");
   background-repeat: no-repeat;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .logo1:hover::before {
@@ -972,34 +998,37 @@ input[type="search"]:hover::placeholder {
 .contacts {
   display: flex;
   flex-direction: row;
-  margin-top: 90px;
-  margin-bottom: 0px;
+  margin-top: 105px;
   margin-bottom: 86px;
+  margin-left: 15px;
+  margin-right: -100px;
 }
 
 .contacts_title {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
+  font-size: 52px;
+  line-height: 80px;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 .contacts_text {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 28px;
-  margin-top: 40px;
+  font-size: 17px;
+  line-height: 32px;
+  margin-top: 32px;
   margin-right: 128px;
+  margin-bottom: 42px;
 }
 
 .rect_contacts {
   background-color: var(--basic-black);
-  width: 80px;
+  width: 88px;
   height: 7px;
 }
 
@@ -1008,8 +1037,9 @@ input[type="search"]:hover::placeholder {
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-  line-height: 28px;
-  margin-top: 60px;
+  line-height: 47px;
+  margin-top: 57px;
+  margin-bottom: 70px;
   margin-bottom: 70px;
 }
 
@@ -1018,7 +1048,8 @@ input[type="search"]:hover::placeholder {
   display: block;
   background-repeat: no-repeat;
   padding-left: 30px;
-  background-position-y: 10px;
+  background-position-y: 20px;
+  margin-left: -40px;
 }
 
 .modal_map {
@@ -1250,8 +1281,7 @@ input[type="search"]:hover::placeholder {
 }
 
 .map {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 85px;
 }
 
 /* --------------------------INNER PAGE--------------------------- */
@@ -1260,23 +1290,26 @@ input[type="search"]:hover::placeholder {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
-  font-size: 47px;
+  font-size: 52px;
+  margin-left: 20px;
   line-height: 58px;
   padding-left: 200px;
 }
 
 .inner_main {
   padding-top: 25px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 34% 66%;
   margin-bottom: 0px;
 }
+
 .breadcrumbs_grid {
   display: flex;
   justify-content: flex-start;
-  padding-left: 200px;
-  padding-top: 30px;
+  margin-left: 180px;
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs {
@@ -1352,7 +1385,7 @@ input[type="search"]:hover::placeholder {
   background-color: #dcdcdc;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 200px;
+  padding-left: 220px;
   padding-right: 193px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -1360,10 +1393,11 @@ input[type="search"]:hover::placeholder {
 
 .filter {
   background-color: var(--basic-grey-light);
-  padding-left: 200px;
+  padding-left: 220px;
   padding-top: 70px;
-  padding-right: 68px;
+  padding-right: 90px;
   margin-top: 0px;
+  margin-bottom: -30px;
 }
 
 .sort {
@@ -1492,7 +1526,7 @@ input[type="search"]:hover::placeholder {
   margin-top: 0px;
   align-self: center;
   text-align: center;
-  margin-left: 72px;
+  margin-left: 77px;
 }
 
 .sort_options {
@@ -1509,7 +1543,7 @@ input[type="search"]:hover::placeholder {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-left: 32px;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 78px;
   margin-right: 140px;
 }
@@ -1522,15 +1556,11 @@ input[type="search"]:hover::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-
   display: none;
-
   text-align: center;
-
   width: 360px;
   height: 207px;
   padding-top: 173px;
-
   padding-left: 0;
   background-color: rgba(238, 238, 238, 0.7);
 }
@@ -1544,12 +1574,12 @@ input[type="search"]:hover::placeholder {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 760px;
-  margin-top: 70px;
-  margin-left: 72px;
+  margin-top: 80px;
+  margin-left: 75px;
 }
 
 .catalog_list {
-  width: 760px;
+  width: 840px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -1568,8 +1598,8 @@ input[type="search"]:hover::placeholder {
   -ms-flex-order: -1;
   order: -1;
 
-  width: 360px;
-  height: 380px;
+  width: 390px;
+  height: 420px;
   margin: 0;
   margin-bottom: 33px;
   background-color: #ececec;
@@ -1586,10 +1616,9 @@ input[type="search"]:hover::placeholder {
 
   position: relative;
 
-  width: 360px;
+  width: 390px;
   min-height: 465px;
   margin-bottom: 42px;
-  margin-right: 40px;
 }
 
 .catalog_item:nth-child(2n) {
@@ -1598,7 +1627,7 @@ input[type="search"]:hover::placeholder {
 
 .device {
   margin: 0;
-
+  margin-top: 5px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
@@ -1633,8 +1662,7 @@ input[type="search"]:hover::placeholder {
   display: none;
 
   text-align: center;
-
-  width: 360px;
+  width: 390px;
   height: 207px;
   padding-top: 173px;
 
@@ -1652,14 +1680,15 @@ input[type="search"]:hover::placeholder {
 
 .new::before {
   content: "";
-  top: 28px;
-  right: 27px;
+  top: 46px;
+  right: 32px;
   z-index: 3;
   position: absolute;
-  width: 60px;
-  height: 61px;
+  width: 69px;
+  height: 69px;
   background-image: url("../img/new.png");
   background-repeat: no-repeat;
+  background-size: 68px 68px;
 }
 
 .catalog_cart {
@@ -1756,7 +1785,9 @@ input[type="search"]:hover::placeholder {
   display: flex;
   justify-content: space-between;
   background-color: var(--basic-grey-light);
-  margin-bottom: 78px;
+  margin-top: 10px;
+  margin-right: -75px;
+  margin-bottom: 60px;
 }
 
 .back {
@@ -1794,7 +1825,7 @@ input[type="search"]:hover::placeholder {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin-right: 35px;
   opacity: 1;
 }
 
@@ -1836,7 +1867,7 @@ input[type="search"]:hover::placeholder {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.3;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .page_3:hover,
@@ -1873,7 +1904,6 @@ input[type="search"]:hover::placeholder {
 .colors {
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 40px;
   padding-left: 0px;
 }
 
@@ -1885,6 +1915,7 @@ input[type="search"]:hover::placeholder {
 
 .multiselect {
   padding-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 .range_controls {
@@ -1947,7 +1978,7 @@ fieldset {
 
 .check {
   padding-left: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   margin-right: 20px;
 }
 .check_input {
@@ -1966,6 +1997,7 @@ fieldset {
   height: 24px;
   background-image: url(../img/checkbox-off.svg);
   margin-right: 20px;
+
 }
 
 .check_input:checked + .check_box {
@@ -2032,7 +2064,7 @@ input[type="radio"]:checked {
 .bluetooth {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 14px;
+  margin-top: 10px;
   padding-left: 0px;
 }
 
