@@ -5,6 +5,7 @@ var form = popup.querySelector(".form");
 var login = popup.querySelector(".form_login");
 var email = popup.querySelector(".form_email");
 var text = popup.querySelector(".form_text");
+var error = popup.querySelector(".form_login");
 
 var map = document.querySelector(".map");
 var modal_map = document.querySelector(".modal_map");
@@ -98,6 +99,7 @@ form.addEventListener("submit", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal_error");
     popup.offsetWidth = popup.offsetWidth;
+    error.classList.add("form_normal1");
     popup.classList.add("modal_error");
   } else {
     if (isStorageSupport) {
@@ -117,4 +119,13 @@ map.addEventListener("click", function(evt){
 
 map_close.addEventListener("click", function(evt){
   modal_map.classList.remove("modal_map_show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modal_map.classList.contains("modal_map_show")) {
+      evt.preventDefault();
+      modal_map.classList.remove("modal_map_show");
+    }
+  }
 });
