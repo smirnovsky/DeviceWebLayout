@@ -64,7 +64,7 @@ header {
   background-color: var(--special-yellow);
   margin: 0 auto;
   width: 1160px;
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 footer {
@@ -322,7 +322,7 @@ input[type="email"]:invalid {
   width: 180px;
   height: 70px;
   left: 200px;
-  top: 18px;
+  top: 20px;
 }
 
 .header_logo:hover,
@@ -337,7 +337,7 @@ input[type="email"]:invalid {
 .header_block1 {
   display: grid;
   grid-template-columns: 49% 26% 12% 13%;
-  padding-top: 35px;
+  padding-top: 34px;
   padding-right: 0px;
   padding-left: 60px;
   font-family: Open Sans;
@@ -358,7 +358,7 @@ input[type="email"]:invalid {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .valentin {
@@ -375,11 +375,11 @@ input[type="email"]:invalid {
 }
 
 .compare1 {
-  margin-left: 45px;
+  margin-left: 41px;
 }
 
 .basket1 {
-  margin-left: 55px;
+  margin-left: 52px;
 }
 
 .header_block2 {
@@ -478,8 +478,8 @@ input[type="email"]:invalid {
   flex-wrap: wrap;
   height: 196px;
   margin: 0 auto;
-  left: 180px;
-  right: 180px;
+  left: 140px;
+  right: 140px;
   padding-left: 60px;
   padding-top: 25px;
   background: #f7e296;
@@ -532,7 +532,7 @@ input[type="email"]:invalid {
 
 .logo_inst {
   opacity: 0.6;
-  margin-right: 18px;
+  
 }
 
 .logo_inst:hover,
@@ -562,6 +562,7 @@ input[type="email"]:invalid {
 
 .logo_face {
   opacity: 0.6;
+  margin-right: 15px;
 }
 
 .logo_face:hover,
@@ -757,11 +758,11 @@ input[type="email"]:invalid {
 }
 
 .slider_img {
-  
+  margin-left: 2px;
 }
 
 .stiller_title {
-  padding-top: 45px;
+  padding-top: 47px;
   padding-right: 55px;
   font-family: Gilroy;
   font-style: normal;
@@ -791,7 +792,7 @@ input[type="email"]:invalid {
 }
 
 .slider_btn {
-  width: 60%;
+  width: 53%;
 }
 
 .slider_radio {
@@ -818,8 +819,9 @@ input[type="email"]:invalid {
 .slider_char {
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 33% 31% 36%;
-  padding-right: 55px;
+  grid-template-columns: 34% 30% 36%;
+  padding-right: 60px;
+  margin-left: -3px;
   margin-top: -65px;
 }
 
@@ -848,7 +850,7 @@ input[type="email"]:invalid {
 /* ----PRODUCTS---- */
 
 .products_grid {
-  margin-top: 55px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -870,7 +872,7 @@ input[type="email"]:invalid {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   margin-left: 0px;
 }
 
@@ -882,7 +884,7 @@ input[type="email"]:invalid {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   margin-left: 0px;
 }
 
@@ -895,7 +897,7 @@ input[type="email"]:invalid {
   letter-spacing: 0.05em;
   padding-top: 38px;
   width: 180px;
-
+  
 }
 
 .products_img1:active {
@@ -907,8 +909,8 @@ input[type="email"]:invalid {
 .main_services {
   display: grid;
   grid-template-columns: 25% 75%;
-  padding-top: 90px;
-  padding-right: 12px;
+  padding-top: 92px;
+  padding-right: 29px;
 }
 
 .services_bg {
@@ -918,7 +920,7 @@ input[type="email"]:invalid {
   width: 100%;
   height: 290px;
   margin-left: -140px;
-  margin-top: 80px;
+  margin-top: 75px;
 }
 
 .button_grid {
@@ -927,7 +929,8 @@ input[type="email"]:invalid {
   flex-direction: column;
   justify-content: center;
   height: 320px;
-  margin-top: -20px;
+  margin-top: -25px;
+  padding-top: 15px;
 }
 
 .flex_info {
@@ -948,7 +951,7 @@ input[type="email"]:invalid {
 
 .delivery_show {
   display: block;
-  margin-left: 116px;
+  margin-left: 90px;
 }
 
 .quality {
@@ -957,7 +960,7 @@ input[type="email"]:invalid {
 
 .quality_show {
   display: block;
-  margin-left: 116px;
+  margin-left: 90px;
 }
 
 .credit {
@@ -966,7 +969,7 @@ input[type="email"]:invalid {
 
 .credit_show {
   display: block;
-  margin-left: 116px;
+  margin-left: 90px;
 }
 
 .service_btn::after {
@@ -1012,15 +1015,17 @@ input[type="email"]:invalid {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  width: 220px;
-  margin-bottom: 20px;
+  width: 150px;
+  margin-bottom: 30px;
 }
 
 .service_btn1 {
   position: relative;
   display: inline-block;
   z-index: 1;
-  padding: 5px 5px;
+  padding: 9px 2px;
+  padding-left: 20px;
+  padding-right: -21px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   line-height: normal;
@@ -1028,12 +1033,11 @@ input[type="email"]:invalid {
   font-weight: 800;
   color: var(--special-yellow);
   vertical-align: middle;
-  text-align: center;
+  text-align: start;
   text-transform: uppercase;
   text-decoration: none;
-  width: 99%;
+  width: 94%;
   margin-bottom: 25px;
-  margin-top: 20px;
   background-color: var(--basic-black);
 }
 
@@ -1044,7 +1048,7 @@ input[type="email"]:invalid {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  margin-left: 0px;
+  margin-left: 26px;
 
 }
 
@@ -1056,20 +1060,30 @@ input[type="email"]:invalid {
   line-height: 28px;
   letter-spacing: 0.1em;
   margin-right: 20px;
-  margin-left: 0px;
   margin-top: 55px;
+  margin-left: 26px;
 }
 
 .services_img {
-  margin-top: -90px;
-  margin-right: 0px;
+  margin-top: -80px;
+  margin-right: -25px;
+}
+
+.services_img1 {
+  margin-top: -75px;
+  margin-right: -40px;
+}
+
+.services_img2 {
+  margin-top: -95px;
+  margin-right: -20px;
 }
 
 /* -----LOGO----- */
 .logo {
   display: flex;
   justify-content: space-between;
-  margin-top: 160px;
+  margin-top: 145px;
   margin-left: 0px;
   margin-right: 40px;
 }
@@ -1137,7 +1151,7 @@ input[type="email"]:invalid {
   margin-top: 89px;
   margin-bottom: 86px;
   margin-left: 0px;
-  margin-right: -50px;
+  margin-right: -45px;
 }
 
 .contacts_title {
@@ -1174,8 +1188,9 @@ input[type="email"]:invalid {
   font-weight: 800;
   font-size: 16px;
   line-height: 43px;
-  margin-top: 52px;
+  margin-top: 53px;
   margin-bottom: 63px;
+  margin-left: 2px;
  
 }
 
@@ -1719,7 +1734,7 @@ input[type="email"]:invalid {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 760px;
-  margin-top: 55px;
+  margin-top: 52px;
   margin-left: 78px;
 }
 
@@ -1744,7 +1759,7 @@ input[type="email"]:invalid {
   order: -1;
   width: 360px;
   height: 380px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   background-color: #ececec;
   margin-top: 20px;
 }
@@ -1760,7 +1775,7 @@ input[type="email"]:invalid {
   position: relative;
   width: 360px;
   min-height: 465px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .catalog_item:nth-child(2n) {
@@ -1769,10 +1784,12 @@ input[type="email"]:invalid {
 
 .device {
   margin: 0;
+  margin-left: 1px;
   margin-top: -4px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
-  letter-spacing: 0.01em;
+  line-height: 22px;
+  letter-spacing: 0.05em;
   line-height: normal;
   font-weight: 800;
   text-transform: none;
@@ -1794,6 +1811,7 @@ input[type="email"]:invalid {
   font-weight: 300;
   color: #464646;
   text-align: right;
+
 }
 
 .catalog_hover {
@@ -1927,9 +1945,8 @@ input[type="email"]:invalid {
   display: flex;
   justify-content: space-between;
   background-color: var(--basic-grey-light);
-  margin-top: 10px;
   margin-bottom: 60px;
-  margin-top: 17px;
+  margin-top: 10px;
 }
 
 .back {
@@ -1942,7 +1959,7 @@ input[type="email"]:invalid {
   text-transform: uppercase;
   text-align: start;
   display: block;
-  padding: 25px 30px;
+  padding: 24px 30px;
 }
 
 .back:hover,
@@ -1967,7 +1984,7 @@ input[type="email"]:invalid {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-right: 30px;
+  margin-right: 0px;
   opacity: 1;
 }
 
@@ -1989,6 +2006,7 @@ input[type="email"]:invalid {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.3;
+  margin-left: 30px;
 }
 
 .page_2:hover,
@@ -2031,7 +2049,7 @@ input[type="email"]:invalid {
   text-transform: uppercase;
   text-align: end;
   display: block;
-  padding: 25px 30px;
+  padding: 23px 28px;
 }
 
 .forward:hover,
@@ -2048,7 +2066,7 @@ input[type="email"]:invalid {
   grid-template-columns: 1fr;
   padding-left: 0px;
   margin-top: 2px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .border_top {
@@ -2122,7 +2140,7 @@ fieldset {
 
 .check {
   padding-left: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   margin-right: 20px;
 }
 .check_input {
@@ -2131,7 +2149,8 @@ fieldset {
 }
 
 .text_type {
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 
 .check_box {
@@ -2208,7 +2227,7 @@ input[type="radio"]:checked {
 .bluetooth {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 0px;
+  margin-top: 3px;
   padding-left: 0px;
 }
 
@@ -2216,5 +2235,5 @@ input[type="radio"]:checked {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
