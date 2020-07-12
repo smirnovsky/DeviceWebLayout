@@ -101,6 +101,7 @@ footer {
 .button:active {
   display: inline-block;
   color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
 }
 
 .button {
@@ -475,13 +476,10 @@ input[type="email"]:invalid {
   z-index: 11;
   display: none;
   flex-wrap: wrap;
-  width: auto;
   height: 196px;
-  margin-left: 0px;
-  margin-right: 0px;
-  left: 140px;
-  right: 140px;
-  padding: 0;
+  margin: 0 auto;
+  left: 180px;
+  right: 180px;
   padding-left: 60px;
   padding-top: 25px;
   background: #f7e296;
@@ -996,6 +994,7 @@ input[type="email"]:invalid {
 .service_btn:active {
   display: inline-block;
   color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
 }
 
 .service_btn {
