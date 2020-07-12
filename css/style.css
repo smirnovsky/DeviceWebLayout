@@ -62,9 +62,9 @@ select {
 
 header {
   background-color: var(--special-yellow);
-  margin-top: 38px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0 auto;
+  width: 1160px;
+  margin-top: 40px;
 }
 
 footer {
@@ -220,6 +220,11 @@ input[type="text"]:focus {
   border: 2px solid var(--special-yellow-dark);
 }
 
+input[type="text"]:invalid {
+  background-color: var(--basic-black);
+}
+
+
 textarea[type="text"] {
   outline: none;
 }
@@ -244,6 +249,11 @@ input[type="email"]:hover {
 input[type="email"]:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-yellow-dark);
+}
+
+input[type="email"]:invalid {
+  background-color: #F6DADA;
+  border: none;
 }
 
 .search {
