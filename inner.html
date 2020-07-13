@@ -9,7 +9,7 @@
   <body class="main_container">
     <header>
       <a href="index.html" class="header_logo"
-        ><img src="img/logo-device.svg" width="163" height="34" alt="logo"
+        ><img src="img/logo_device.svg" width="163" height="34" alt="logo"
       /></a>
       <div class="header_block11">
         <form class="search_flex">
@@ -35,55 +35,37 @@
       <nav>  
         <ul class="header_block2">
           <li class="main_catalog">
-            <div class="catalog link_style1 header_block_style menu_close">
+            <div class="catalog link_style1 header_block_style_catalog menu_close">
               <div>Каталог товаров</div>
               <img class="plus_img" width="17" height="15" src="./img/icon_plus.png" alt="+" />
             </div>
-            <ul class="catalog_menu">
+            <div class="catalog_menu">
               <div>
-                <li class="menu_style2 link_style1">
-                  <a href="">
-                    Виртуальная реальность
-                  </a>
-                </li>
-                <li class="menu_style2 link_style1">
-                  <a href="inner.html">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="menu_style2 link_style1">
-                  <a href="">
-                    Экшн-камеры
-                  </a>
-                </li>
+                <ul>
+                  <li><a class="menu_style2 link_style1" href="">Виртуальная реальность</a></li>
+                  <li><a class="menu_style2 link_style1" href="inner.html">Моноподы для селфи</a></li>
+                  <li><a class="menu_style2 link_style1" href="">Экшн-камеры</a></li>
+                </ul>  
               </div>
               <div>
-                <li class="menu_style2 link_style1">
-                  <a href="">
-                    Фитнес-браслеты
-                  </a>
-                </li>
-                <li class="menu_style2 link_style1">
-                  <a href="">
-                    Умные часы
-                  </a>
-                </li>
+                <ul>
+                  <li><a class="menu_style2 link_style1" href="">Фитнес-браслеты</a></li>
+                  <li><a class="menu_style2 link_style1" href="">Умные часы</a></li>
+                </ul>
               </div>
               <div>
-                <li class="menu_style2 link_style1">
-                  <a href="">
-                    Квадрокоптер
-                  </a>
-                </li>
+                <ul>
+                  <li><a class="menu_style2 link_style1" href="">Квадрокоптер</a></li>
+                </ul>  
               </div>
-            </ul>
+            </div>
           </li>
           <li class="header_block_style link_style1">
             <a href="">
               Доставка
             </a>
           </li>
-          <li class="header_block_style link_style1">
+          <li class="header_block_style4 link_style1">
             <a href="">
               Гарантия
             </a>
@@ -110,7 +92,7 @@
       </li>
       <li>
         <a class="breadcrumbs_link" href="">
-          <div class="breadcrumbs_style">Каталог товаров</div> 
+          <div class="breadcrumbs_style2">Каталог товаров</div> 
           <div class="arrow"></div>
         </a>
       </li>
@@ -167,45 +149,48 @@
             <div class="range_toggle range_toggle_min"></div>
             <div class="range_toggle range_toggle_max"></div>
           </div>
+          <div class="price_row">
+            <p class="prie_left">от 0</p>
+            <p class="price_right">до 5000</p>
+          </div>
         </section>
 
       <form class="border_top" action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset class="colors">
           <legend class="filter_bold">Цвет</legend>
           <label class="filter_normal check_color check option">
-            <input class="check_input" type="checkbox" name="Black" class="check_box"/>
+            <input class="check_input" type="checkbox" name="Black" />
             <span class="check_box"></span>
-            <div class="text_type"> Черный</div>
+            <span class="text_type"> Черный</span>
           </label>
-
             
           <label class="filter_normal check_color check option">
             <input class="check_input" type="checkbox" name="White"/>
             <span class="check_box"></span>
-            <div class="text_type">Белый</div> 
+            <span class="text_type">Белый</span> 
           </label>
 
           <label class="filter_normal check_color check option">
             <input class="check_input" type="checkbox" name="Blue"/> 
             <span class="check_box"></span>
-            <div class="text_type">Синий</div>
+            <span class="text_type">Синий</span>
           </label>
 
           <label class="filter_normal check_color check option">
             <input class="check_input" type="checkbox" name="Red"/> 
             <span class="check_box"></span>
-            <div class="text_type">Красный</div>
+            <span class="text_type">Красный</span>
           </label>
 
           <label class="filter_normal check_color check option">
             <input class="check_input" type="checkbox" name="Pink"/> 
             <span class="check_box"></span>
-            <div class="text_type">Розовый</div>
+            <span class="text_type">Розовый</span>
           </label>
         </fieldset>
        <div class="border_top"> 
         <fieldset class="bluetooth">  
-          <legend class="filter_bold title_margin">Bluetooth</legend>
+          <legend class="filter_bold">Bluetooth</legend>
             <label class="filter_normal radio_style">  
               <input name="Bluetooth" type="radio" value="Have"/>Есть 
             </label>
@@ -226,7 +211,7 @@
           <h4 class="device">Любительская селфи-палка</h4>
         </a>
         <p class="catalog_item_image">
-          <img src="./img/item-11.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          <img src="./img/item_11.jpg" width="360" height="380" alt="Любительская селфи-палка">
         </p>
         <span class="price">500 руб.</span>
         <ul class="catalog_hover">
@@ -239,7 +224,7 @@
           <h4 class="device">Профессиональная селфи-палка</h4>
         </a>
         <p class="catalog_item_image">
-          <img src="./img/item-21.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <img src="./img/item_21.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
         </p>
         <span class="price">1 500 руб.</span>
         <ul class="catalog_hover">
@@ -252,7 +237,7 @@
           <h4 class="device">Непотопляемая селфи-палка</h4>
         </a>
         <p class="catalog_item_image">
-          <img src="./img/item-31.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <img src="./img/item_31.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
         </p>
         <span class="price">2 500 руб.</span>
         <ul class="catalog_hover">
@@ -265,7 +250,7 @@
           <h4 class="device">Селфи-палка «Следуй за мной»</h4>
         </a>
         <p class="catalog_item_image">
-          <img src="./img/item-41.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <img src="./img/item_41.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
         </p>
         <span class="price">4 900 руб.</span>
         <ul class="catalog_hover">
@@ -292,7 +277,7 @@
         <a class="basket link_style2 footer_basket_img" href="">Корзина</a>
       </div>
 
-      <a class="footer_logo" href="index.html"><img src="img/logo-yellow.svg" width="163" height="35" alt="DEVICE" /></a>
+      <a class="footer_logo" href="index.html"><img src="img/logo_yellow.svg" width="163" height="35" alt="DEVICE" /></a>
 
       <div class="footer_block2">
         <address class="adress">г. Москва, ул. Строителей, 15</address>
@@ -319,7 +304,7 @@
           /></a>
         </div>
         <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss"
-          ><img src="img/logo-html.png" width="27" height="34" alt=" HTML Academy"
+          ><img src="img/logo_html.png" width="27" height="34" alt=" HTML Academy"
         /></a>
       </section>
     </footer>

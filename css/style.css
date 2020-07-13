@@ -19,8 +19,8 @@
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("../fonts/open-sans-v17-latin_cyrillic-300.woff2") format("woff2"),
-    url("../fonts/open-sans-v17-latin_cyrillic-300.woff") format("woff");
+    url("../fonts/open_sans_v17_latin_cyrillic_300.woff2") format("woff2"),
+    url("../fonts/open_sans_v17_latin_cyrillic_300.woff") format("woff");
 }
 
 @font-face {
@@ -28,17 +28,17 @@
   font-style: normal;
   font-weight: 800;
   src: local("Gilroy"), local("gilroy"),
-    url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url("../fonts/Gilroy-Extrabold.woff") format("woff");
+    url("../fonts/Gilroy_Extrabold.woff2") format("woff2"),
+    url("../fonts/Gilroy_Extrabold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy-light";
+  font-family: "Gilroy_light";
   font-style: normal;
   font-weight: 300;
-  src: local("Gilroy-light"), local("Gilroy-Light"),
-    url("../fonts/Gilroy-Light.woff2") format("woff2"),
-    url("../fonts/Gilroy-Light.woff") format("woff");
+  src: local("Gilroy_light"), local("Gilroy_Light"),
+    url("../fonts/Gilroy_Light.woff2") format("woff2"),
+    url("../fonts/Gilroy_Light.woff") format("woff");
 }
 
 /* ---------------GLOBAL---------------- */
@@ -350,7 +350,7 @@ input[type="email"]:invalid {
 .header_block11 {
   display: grid;
   grid-template-columns: 45% 30% 12% 12%;
-  padding-top: 35px;
+  padding-top: 34px;
   padding-right: 60px;
   padding-left: 60px;
   font-family: Open Sans;
@@ -393,6 +393,7 @@ input[type="email"]:invalid {
 
 .contact_title {
   text-align: right;
+  margin-right: -6px;
 }
 
 .header_block3 {
@@ -430,9 +431,21 @@ input[type="email"]:invalid {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.header_block_style_catalog {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 18px;
+  margin-left: -2px;
 }
 
 .header_block_style1 {
@@ -470,18 +483,32 @@ input[type="email"]:invalid {
   margin-right: -8px;
 }
 
+.header_block_style4 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  margin-left: 3px;
+}
+
+
 .catalog_menu {
   position: absolute;
   top: 180px;
   z-index: 11;
   display: none;
   flex-wrap: wrap;
-  height: 196px;
+  height: 140px;
   margin: 0 auto;
   left: 140px;
   right: 140px;
-  padding-left: 60px;
-  padding-top: 25px;
+  padding-left: 20px;
+  padding-top: 19px;
+  margin-bottom: 20px;
   background: #f7e296;
   font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 15px;
@@ -510,8 +537,16 @@ input[type="email"]:invalid {
 
 .menu_style2 {
   margin-bottom: 20px;
-  margin-top: 12px;
-  margin-right: 61px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.write_us {
+  width: 250px;
+}
+
+.about_us {
+  width: 250px;
 }
 
 .plus_img {
@@ -520,7 +555,10 @@ input[type="email"]:invalid {
 }
 /* -----------------------FOOTER------------------------  */
 
-
+.footer_logo {
+ margin-top: 4px;
+}
+ 
 .footer_logo:hover,
 .footer_logo:focus {
   opacity: 0.6;
@@ -580,7 +618,7 @@ input[type="email"]:invalid {
   width: 80px;
   height: 7px;
   align-self: center;
-  
+  margin-top: -4px;
 }
 
 .footer_enter_img {
@@ -615,14 +653,15 @@ input[type="email"]:invalid {
 .footer_block1 {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
+  margin-top: 66px;
 }
 
 .footer_block2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 39px;
+  padding-top: 37px;
+  margin-left: -2px;
 }
 
 .footer_block3 {
@@ -633,8 +672,8 @@ input[type="email"]:invalid {
   justify-content: flex-end;
   flex-direction: row;
   margin-left: 72%;
-  margin-top: 17px;
-  margin-bottom: -10px;
+  margin-top: 18px;
+  margin-bottom: -12px;
 }
 
 .footer_services {
@@ -645,7 +684,7 @@ input[type="email"]:invalid {
   text-transform: uppercase;
   color: var(--basic-white);
   margin-right: 0px;
-  margin-left: 45px;
+  margin-left: 42px;
 }
 
 .footer_services1 {
@@ -730,7 +769,7 @@ input[type="email"]:invalid {
 
 .academy {
   text-align: end;
-  background-image: url("../img/logo-html.png");
+  background-image: url("../img/logo_html.png");
   position: relative;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -827,7 +866,7 @@ input[type="email"]:invalid {
 
 .slider_char1 {
   padding-top: 60px;
-  font-family: Gilroy-light;
+  font-family: Gilroy_light;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -836,7 +875,7 @@ input[type="email"]:invalid {
 }
 
 .slider_char2 {
-  font-family: Gilroy-light;
+  font-family: Gilroy_light;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1099,7 +1138,7 @@ input[type="email"]:invalid {
 }
 
 .logo1:hover::before {
-  background-image: url("../img/logo-1.png");
+  background-image: url("../img/logo_1.png");
 }
 
 .logo2::before {
@@ -1113,7 +1152,7 @@ input[type="email"]:invalid {
 }
 
 .logo2:hover::before {
-  background-image: url("../img/logo-2.png");
+  background-image: url("../img/logo_2.png");
 }
 
 .logo3::before {
@@ -1127,7 +1166,7 @@ input[type="email"]:invalid {
 }
 
 .logo3:hover::before {
-  background-image: url("../img/logo-3.png");
+  background-image: url("../img/logo_3.png");
 }
 
 .logo4::before {
@@ -1140,7 +1179,7 @@ input[type="email"]:invalid {
 }
 
 .logo4:hover::before {
-  background-image: url("../img/logo-4.png");
+  background-image: url("../img/logo_4.png");
 }
 
 /* -----CONTACTS----- */
@@ -1203,6 +1242,12 @@ input[type="email"]:invalid {
   margin-left: -40px;
 }
 
+
+.iframe_map {
+  width: 1000px;
+  height: 600px;
+}
+
 .modal_map {
   position: fixed;
   display: none;
@@ -1251,7 +1296,7 @@ input[type="email"]:invalid {
   z-index: 5;
   position: absolute;
   margin-top: 15px;
-  margin-left: -15px;
+  margin-left: -75px;
   cursor: pointer;
 }
 
@@ -1380,7 +1425,7 @@ input[type="email"]:invalid {
 }
 
 .form_normal {
-  font-family: Gilroy-light;
+  font-family: Gilroy_light;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1475,6 +1520,7 @@ input[type="email"]:invalid {
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
+  margin-left: -15px;
 }
 
 .breadcrumbs_style {
@@ -1487,10 +1533,21 @@ input[type="email"]:invalid {
   margin-right: 10px;
 }
 
+.breadcrumbs_style2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+  margin-right: 17px;
+  margin-left: -7px;
+}
+
 .breadcrumbs_link {
   display: flex;
   flex-direction: row;
-  margin-right: 8px;
+  margin-right: 2px;
 }
 
 .breadcrumbs_style:active {
@@ -1508,7 +1565,7 @@ input[type="email"]:invalid {
   background-image: url("../img/icon_arrow_nav.png");
   display: block;
   background-repeat: no-repeat;
-  padding-left: 22px;
+  padding-left: 35px;
   background-position-y: 4px;
 }
 
@@ -1554,6 +1611,28 @@ input[type="email"]:invalid {
   padding-right: 60px;
   margin-top: 0px;
   margin-bottom: -20px;
+}
+
+.price_row {
+  flex-direction: row;
+  display: flex;
+  font-family: Gilroy_light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: -3px;
+  margin-bottom: -41px;
+}
+
+.price_left {
+  flex:1;
+}
+
+.price_right {
+  text-align: center;
+  flex:1;
+  margin-left: 20px;
 }
 
 .sort {
@@ -1632,6 +1711,7 @@ input[type="email"]:invalid {
   position: relative;
   width: 11px;
   height: 10px;
+  
 }
 
 .max a::after {
@@ -1641,7 +1721,7 @@ input[type="email"]:invalid {
   position: absolute;
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url("../img/icon_up_dir.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
 }
@@ -1653,7 +1733,7 @@ input[type="email"]:invalid {
   position: absolute;
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url("../img/icon_down_dir.svg");
   background-repeat: no-repeat;
 }
 
@@ -1686,7 +1766,16 @@ input[type="email"]:invalid {
 }
 
 .on_price {
-  margin-left: 20px;
+  margin-left: 17px;
+}
+
+.on_type {
+  margin-left: 4px;
+}
+
+.on_popularity {
+  margin-left: 4px;
+  
 }
 
 .sort_options {
@@ -1932,7 +2021,7 @@ input[type="email"]:invalid {
 }
 
 .price {
-  font-family: Gilroy-light;
+  font-family: Gilroy_light;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -2065,14 +2154,16 @@ input[type="email"]:invalid {
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 0px;
-  margin-top: 2px;
-  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: -1px;
 }
 
 .border_top {
   border-top: 2px solid black;
   padding-top: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
+  margin-left: 0px;
 }
 
 .multiselect {
@@ -2105,7 +2196,7 @@ input[type="email"]:invalid {
   width: 20px;
   height: 23px;
 
-  background-image: url("../img/filter-button.svg");
+  background-image: url("../img/filter_button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2135,12 +2226,13 @@ fieldset {
 
 .option {
   display: block;
-  margin-bottom: 10px;
+ 
 }
 
 .check {
-  padding-left: 24px;
-  padding-bottom: 11px;
+  margin-top: 8px;
+  padding-left: 25px;
+  margin-bottom: 20px;
   margin-right: 20px;
 }
 .check_input {
@@ -2149,8 +2241,8 @@ fieldset {
 }
 
 .text_type {
-  margin-left: 15px;
-  margin-top: 2px;
+  margin-left: 17px;
+ 
 }
 
 .check_box {
@@ -2158,13 +2250,13 @@ fieldset {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkbox_off.svg);
   margin-right: 20px;
-
+  margin-top: -3px;
 }
 
 .check_input:checked + .check_box {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox_on.svg);
 }
 
 .check_input:hover + .check_box {
@@ -2227,13 +2319,16 @@ input[type="radio"]:checked {
 .bluetooth {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 3px;
+  margin-top: 2px;
   padding-left: 0px;
+  margin-left: -1px;
+  margin-right: 5px;
 }
 
 .radio_style {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
+  margin-top: 2px;
 }
