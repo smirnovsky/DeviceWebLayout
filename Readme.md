@@ -2,4 +2,4 @@
 
 ### About the project.
 
-The layout of the site is implemented using the "mobile first" technology. BEM technologies and preprocessors were used to stylize the site.
+The layout of the site is implemented using the "mobile first" technology. BEM technologies were used to stylize the site.
